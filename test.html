@@ -9,9 +9,21 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-    <h1>AP Precalculus Practice Test</h1>
+    <div class="header">
+        <img src="logo.png" alt="North Tahoe High School Logo" class="logo">
+        <h1>AP Precalculus Practice Test</h1>
+        <p>North Tahoe High School</p>
+    </div>
+    
     <form id="test-form" action="https://formspree.io/f/xjkvbzna" method="POST" enctype="multipart/form-data">
-        <!-- Section 1: Multiple Choice -->
+        <h2>Student Information</h2>
+        <div class="student-info">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+        </div>
+        
         <h2>Multiple Choice Questions</h2>
 
         <!-- Question 1 -->
@@ -50,7 +62,6 @@
             <input type="radio" name="q4" value="d"> D) As \( x \to \infty, f(x) \to \infty \); as \( x \to -\infty, f(x) \to \infty \)<br>
         </div>
 
-        <!-- Section 2: Free Response -->
         <h2>Free Response Questions</h2>
 
         <!-- Question 5 -->
