@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>AP Precalculus Practice Test</h1>
-    <form id="test-form">
+    <form id="test-form" enctype="multipart/form-data">
         <!-- Section 1: Multiple Choice -->
         <h2>Multiple Choice Questions</h2>
 
@@ -57,31 +57,43 @@
         <!-- Question 5 -->
         <div class="question">
             <p>5. Sketch the graph of \( y = 2\cos\left(\frac{\pi}{2}x\right) \) for \( x \) in the interval \( [0, 4] \). Describe the key points.</p>
-            <textarea name="q5" rows="4" cols="50"></textarea>
+            <textarea name="q5-text" rows="4" cols="50" placeholder="Describe your sketch here"></textarea><br>
+            <label for="q5-image">Upload your sketch (image):</label>
+            <input type="file" name="q5-image" accept="image/*"><br>
         </div>
 
         <!-- Question 6 -->
         <div class="question">
             <p>6. Solve for \( x \): \( 2 \cdot 3^x = 54 \). Show all steps.</p>
-            <textarea name="q6" rows="4" cols="50"></textarea>
+            <textarea name="q6-text" rows="4" cols="50"></textarea><br>
+            <label for="q6-image">Upload any supporting diagram or calculation (optional):</label>
+            <input type="file" name="q6-image" accept="image/*"><br>
         </div>
+
+        <!-- Continue similar structure for other free-response questions -->
 
         <!-- Question 7 -->
         <div class="question">
             <p>7. Given \( f(x) = x^3 - 6x^2 + 11x - 6 \), find all the zeros of the polynomial. Confirm your answers by using synthetic division or another method.</p>
-            <textarea name="q7" rows="4" cols="50"></textarea>
+            <textarea name="q7-text" rows="4" cols="50"></textarea><br>
+            <label for="q7-image">Upload any supporting work (optional):</label>
+            <input type="file" name="q7-image" accept="image/*"><br>
         </div>
 
         <!-- Question 8 -->
         <div class="question">
             <p>8. Find the sum of the first 8 terms of the arithmetic sequence where the first term is 5 and the common difference is 3.</p>
-            <textarea name="q8" rows="4" cols="50"></textarea>
+            <textarea name="q8-text" rows="4" cols="50"></textarea><br>
+            <label for="q8-image">Upload any supporting work (optional):</label>
+            <input type="file" name="q8-image" accept="image/*"><br>
         </div>
 
         <!-- Question 9 -->
         <div class="question">
             <p>9. Evaluate the limit: \( \lim_{x \to 2} \frac{x^2 - 4}{x - 2} \). Explain the process and determine if the function is continuous at \( x = 2 \).</p>
-            <textarea name="q9" rows="4" cols="50"></textarea>
+            <textarea name="q9-text" rows="4" cols="50"></textarea><br>
+            <label for="q9-image">Upload any supporting work (optional):</label>
+            <input type="file" name="q9-image" accept="image/*"><br>
         </div>
 
         <!-- Question 10 -->
@@ -89,7 +101,9 @@
             <p>10. A projectile is launched from the ground with an initial velocity of 80 feet per second. Its height after \( t \) seconds is given by \( h(t) = -16t^2 + 80t \).<br>
             a) Find the time when the projectile reaches its maximum height.<br>
             b) What is the maximum height reached by the projectile?</p>
-            <textarea name="q10" rows="4" cols="50"></textarea>
+            <textarea name="q10-text" rows="4" cols="50"></textarea><br>
+            <label for="q10-image">Upload any supporting work (optional):</label>
+            <input type="file" name="q10-image" accept="image/*"><br>
         </div>
 
         <button type="button" onclick="submitTest()">Submit Test</button>
