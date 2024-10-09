@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Precalculus Interactive Test</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>AP Precalculus Practice Test</h1>
+    <form id="test-form">
+        <!-- Section 1: Multiple Choice -->
+        <h2>Multiple Choice Questions</h2>
+        <div class="question">
+            <p>1. Given \( f(x) = x^2 \), which of the following represents \( g(x) = (x - 3)^2 + 2 \)?</p>
+            <input type="radio" name="q1" value="a"> A) A horizontal shift left by 3 and an upward shift by 2<br>
+            <input type="radio" name="q1" value="b"> B) A horizontal shift right by 3 and a downward shift by 2<br>
+            <input type="radio" name="q1" value="c"> C) A horizontal shift right by 3 and an upward shift by 2<br>
+            <input type="radio" name="q1" value="d"> D) A horizontal shift left by 3 and a downward shift by 2<br>
+        </div>
+
+        <!-- Repeat similar structure for other multiple-choice questions -->
+
+        <!-- Section 2: Free Response -->
+        <h2>Free Response Questions</h2>
+        <div class="question">
+            <p>5. Sketch the graph of \( y = 2\cos\left(\frac{\pi}{2}x\right) \) for \( x \) in the interval \( [0, 4] \). Describe the key points.</p>
+            <textarea name="q5" rows="4" cols="50"></textarea>
+        </div>
+
+        <!-- Repeat similar structure for other free-response questions -->
+
+        <button type="button" onclick="submitTest()">Submit Test</button>
+    </form>
+
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
